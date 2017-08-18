@@ -109,6 +109,8 @@
 	of_flat_dt_is_compatible(of_get_flat_dt_root(), "qcom,atollp")
 #define early_machine_is_sdm660()	\
 	of_flat_dt_is_compatible(of_get_flat_dt_root(), "qcom,sdm660")
+#define early_machine_is_sdm636()	\
+	of_flat_dt_is_compatible(of_get_flat_dt_root(), "qcom,sdm636")
 #define early_machine_is_atoll_ab()	\
 	of_flat_dt_is_compatible(of_get_flat_dt_root(), "qcom,atoll-ab")
 #define early_machine_is_sda660()	\
@@ -162,6 +164,7 @@
 #define early_machine_is_atollp()	0
 #define early_machine_is_sdm660()	0
 #define early_machine_is_sda660()	0
+#define early_machine_is_sdm636()	0
 #endif
 
 #define PLATFORM_SUBTYPE_MDM	1
@@ -210,6 +213,7 @@ enum msm_cpu {
 	MSM_CPU_ATOLL_AB,
 	MSM_CPU_SDM660,
 	MSM_CPU_SDA660,
+	MSM_CPU_SDM636,
 };
 
 struct msm_soc_info {
