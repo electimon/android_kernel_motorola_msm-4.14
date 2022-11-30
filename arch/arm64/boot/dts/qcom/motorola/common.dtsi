@@ -1,0 +1,4 @@
+&pm660l_rgb_led {
+	/delete-node/ green;
+	/delete-node/ blue;
+};
