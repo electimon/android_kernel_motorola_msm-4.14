@@ -1115,6 +1115,12 @@ config MOTOROLA_BECKHAM_DTB
 	help
 	  Say 'Y' here to enable compliation of the Motorola Z3 Play DTB.
 
+config MOTOROLA_HEART_DTB
+	bool "Motorola X4 (Heart)"
+	depends on MOTOROLA_DTB
+	help
+	  Say 'Y' here to enable compliation of the Motorola X5 DTB.
+
 config MOTOROLA_PAYTON_DTB
 	bool "Motorola X4 (Payton)"
 	depends on MOTOROLA_DTB
