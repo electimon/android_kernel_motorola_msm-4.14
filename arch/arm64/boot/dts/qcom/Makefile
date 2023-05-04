@@ -493,6 +493,10 @@ dtb-$(CONFIG_ARCH_SDM660) += sdm660-sim.dtb \
 	sda636-pm660a-mtp.dtb \
 	sda636-pm660a-qrd-hdk.dtb \
 	sda636-pm660a-rcm.dtb
+
+ifeq ($(CONFIG_MOTOROLA_DTB),y)
+dtb-$(CONFIG_MOTOROLA_BECKHAM_DTB) += motorola/beckham/sdm636-beckham.dtb
+endif
 endif
 
 endif
