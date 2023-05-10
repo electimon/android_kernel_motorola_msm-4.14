@@ -4,7 +4,9 @@
 #include "../../msm-pm660a.dtsi"
 #include "../moto-pinctrl.dtsi"
 #include "pinctrl.dtsi"
+#include "audio.dtsi"
 #include "../moto-fps.dtsi"
+#include "camera.dtsi"
 #include "dsi-panel-mot-smd-601-1080p-cmd.dtsi"
 #include "dsi-panel-mot-tianma-601-1080p-cmd.dtsi"
 #include "../carrier-channel-ids.dtsi"
@@ -425,6 +427,7 @@
 };
 
 &i2c_4 {
+	qcom,disable-dma;
 	status = "okay";
 	synaptics_dsx_i2c@20 {
 		compatible = "synaptics,synaptics_dsx_i2c";
