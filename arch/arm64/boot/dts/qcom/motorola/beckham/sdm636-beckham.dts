@@ -4,6 +4,7 @@
 #include "../../msm-pm660a.dtsi"
 #include "pinctrl.dtsi"
 #include "../common.dtsi"
+#include "audio.dtsi"
 #include "camera.dtsi"
 #include "dsi-panel-mot-smd-601-1080p-cmd.dtsi"
 #include "dsi-panel-mot-tianma-601-1080p-cmd.dtsi"
