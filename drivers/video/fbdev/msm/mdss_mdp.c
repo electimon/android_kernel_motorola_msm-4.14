@@ -1449,6 +1449,9 @@ static void __mdss_mdp_clk_control(struct mdss_data_type *mdata, bool enable)
 		if (IS_ERR_VALUE((unsigned long) rc))
 			pr_err("IOMMU attach failed\n");
 
+		if ((mdata->bus_hdl == 0) || (mdata->curr_bw_uc_idx == 0))
+			return;
+
 		/* Active+Sleep */
 		msm_bus_scale_client_update_context(mdata->bus_hdl,
 			false, mdata->curr_bw_uc_idx);
